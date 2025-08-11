@@ -31,12 +31,26 @@ h6 {
 }
 
 .intro-header {
-    padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    position: relative;
+    padding-top: 50px;
     padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
-    background: url(../img/intro-bg.jpg) no-repeat center center;
+    background: url(../img/intro-bg.png) no-repeat center center;
     background-size: cover;
+}
+
+.intro-header::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.4); /* 黑色半透明遮罩，數字越大越暗 */
+    z-index: 0;
+}
+
+.intro-header > * {
+    position: relative;
+    z-index: 1; /* 讓文字在遮罩上方 */
 }
 
 .intro-message {
