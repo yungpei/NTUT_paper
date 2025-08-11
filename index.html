@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
-    <title>論文題目</title>
+    <title>心臟電腦斷層神經雙重輪廓表面網格重建</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.lp.css">
 	<link rel="stylesheet" type="text/css" href="css/landing-page.css">
@@ -52,16 +52,20 @@
             <div class="row">
                 <div class="col-lg-12" style="height:300px;">
                     <div class="intro-message" style="position: relative;padding-top: 0%;padding-bottom: 70%;">
-                        <h1>論文題目</h1>
+                        <h1>心臟電腦斷層神經雙重輪廓表面網格重建</h1>
+                        <h2>Cardiac Computed Tomography Neural Dual Contouring Surface Mesh Reconstruction</h2>
                         <ul class="list-inline intro-social-buttons">
                             <li>
-                                <a href="demo.html" class="btn btn-default btn-lg"> 
-                                    <span class="network-name" style="font-weight: 900;">進入系統</span>
+                                <a href="https://github.com/yungpei/NTUT_paper" target="_blank" class="btn btn-default btn-lg" style="margin-right: 10px;"> 
+                                    <span class="network-name" style="font-weight: 900; text-transform: none;">Github Page</span>
+                                </a>
+                                <a href="https://github.com/yungpei/NDC" target="_blank" class="btn btn-default btn-lg" style="margin-left: 10px;"> 
+                                    <span class="network-name" style="font-weight: 900; text-transform: none;">System Github</span>
                                 </a>
                             </li>
 			    <li>
 				<!-- 使用 姓名貼紙產生器(彭) https://howlemon.github.io/ct2022s/hw02/index.html 製作姓名 SVG-->
-				<img src="https://raw.githubusercontent.com/t109598054/VR360_classroom/e00c28d19318a4c965b677af5bd7f2dbd4b8dd1d/img/svg/fang.svg" width="100" />
+				<img src="t112598033.svg" width="100" />
 			    </li>
                         </ul>
                     </div>
@@ -82,7 +86,12 @@
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
 			<h2 class="section-heading">摘要</h2>
-			<p class="lead">內文內文內文內文內文內文內文內文內文內文</p>
+			<p class="lead">傳統醫學影像三維重建多仰賴幾何演算法，容易在細節還原與拓樸結構重現上出現不足。
+                本研究採用深度學習驅動的心臟電腦斷層影像三維表面網格重建方法，並結合神經雙重輪廓技術，以提升心臟輪廓擬合的精度與拓樸一致性。
+                研究採用振興醫院提供之五組心臟電腦斷層影像資料，將原始神經成像檔案重採樣至固定解析度：512 × 512 × 512，並將生成的體素遮罩與符號距離場資料一併儲存為 HDF5 檔案格式，作為模型訓練之用。
+                為全面評估所提方法之效能，實驗中同時比較了神經行進立方體架構與傳統視覺化工具函式庫裡的 Marching Cubes 模組，並在應用程式 MeshLab 中將各方法生成之三角網格進行幾何與視覺品質比較。
+                實驗結果顯示，所提神經雙重輪廓方法在高解析度條件下能產出具平滑表面與拓樸一致性的網格模型。相較之下，神經行進立方體在尖銳特徵擬合上表現較佳，而視覺化工具函式庫基於 Marching Cubes 的重建則易出現拓樸漏洞及表面雜訊。
+                深度學習重建方法皆優於傳統演算法，驗證其於醫學影像三維重建任務中的可行性與應用潛力。</p>
                 </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
 					<br><br><br>
@@ -142,7 +151,7 @@
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
 			<h2 class="section-heading">影片</h2>
-			<p class="lead">內文內文內文內文內文內文內文內文內文內文</p>
+			
                 </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
 			<br><br><br>
